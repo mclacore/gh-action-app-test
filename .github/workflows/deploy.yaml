@@ -13,6 +13,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install Massdriver CLI
         uses: massdriver-cloud/actions@v4
+      - name: Mass Version
+        run: mass version
       - name: Push Image
         uses: massdriver-cloud/actions/image_push@v4
         with:
